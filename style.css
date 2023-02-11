@@ -34,22 +34,25 @@ nav {
     text-align: center;
 }
 
-.content title, h1, h2{
+h1, h2, h3{
     padding: 0;
     margin: 0;
     text-shadow: 10px 20px 60px rgb(34, 40, 12);
 }
 
-.content title{
+h1{
+    font: Albert-Sans;
     font-size: 15vw;
     color: #8E3B46;
 }
-.content h1{
+h2{
+    font: Albert-Sans;
     font-size: 6vw;
     color: #3C4C32;
 }
 
-.content h2{
+h3{
+    font: Albert-Sans;
     font-size: 3vw;
     color: #718758
 }
