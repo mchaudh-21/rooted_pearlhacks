@@ -48,6 +48,11 @@ h4{
     font-size: 60vw;
     color: #000000
 }
+h5{
+    font: Albert-Sans, sans-serif;
+    font-size: 6vw;
+    color: #f7e6ca;
+}
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
