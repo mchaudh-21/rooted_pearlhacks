@@ -293,10 +293,22 @@
             .slider.round:before {
             border-radius: 50%;
             }
-
-
+            
+            /* for heart*/
+            p,
+            input {
+              display: none;
+            }
+            input:checked ~ label {
+              color: rgb(241, 0, 0);
+            }
+            label {
+              font-size: 4em;
+            }
+            
         </style>
     </head>
+
     <body>  
         <form>
             <div class="listing-section">
@@ -305,14 +317,19 @@
                     <div class="col rounded" style = "background-color: #739a4e;">
                         <div class= "card">
                             <div class="product">
-                                <div class="image-box">
-                                  <div class="images" id="image-1"></div>
-                                </div>
+                              
+                              <div class="image-box">
+                                <div class="images" id="image-1"></div>
+                              </div>                                                    
                                 <div class="text-box">
                                   <h3 style ="font-size: 2vw">Naval Oranges</h3>
                                   <p>Produce</p>
                                   <p><span>&#127793</span><span>&#127793</span></p>
                                   <p><span>&#128178</span></p>
+                                  <div style = "float:left;">
+                                    <input type="checkbox" id="heart" checked>
+                                    <label for="heart">&#9829</label>
+                                  </div>
                                   <div style="float:right;">
                                     <p>Bought?</p>
                                     <label class="switch">
@@ -337,6 +354,10 @@
                                   <p>Produce</p>
                                   <p><span>&#127793</span><span>&#127793</span><span>&#127793</span><span>&#127793</span></p>
                                   <p><span>&#128178</span><span>&#128178</span></p>
+                                  <div style = "float:left;">
+                                    <input type="checkbox" id="heart" checked>
+                                    <label for="heart">&#9829</label>
+                                  </div>
                                   <div style="float:right;">
                                     <p>Bought?</p>
                                     <label class="switch">
@@ -361,6 +382,10 @@
                                   <p>Personal item</p>
                                   <p><span>&#127793</span><span>&#127793</span><span>&#127793</span></p>
                                   <p><span>&#128178</span><span>&#128178</span><span>&#128178</span></p>
+                                  <div style = "float:left;"> 
+                                    <input type="checkbox" id="heart" checked>
+                                    <label for="heart">&#9829</label>
+                                  </div>
                                   <div style="float:right;">
                                     <p>Bought?</p>
                                     <label class="switch">
@@ -384,6 +409,10 @@
                                   <p>Kitchen</p>
                                   <p><span>&#127793</span><span>&#127793</span></p>
                                   <p><span>&#128178</span><span>&#128178</span><span>&#128178</span></p>
+                                  <div style = "float:left;">
+                                    <input type="checkbox" id="heart" checked>
+                                    <label for="heart">&#9829</label>
+                                  </div>
                                   <div style="float:right;">
                                     <p>Bought?</p>
                                     <label class="switch">
@@ -407,6 +436,10 @@
                                 <p>Personal item</p>
                                 <p><span>&#127793</span><span>&#127793</span><span>&#127793</span></p>
                                 <p><span>&#128178</span><span>&#128178</span><span>&#128178</span></p>
+                                <div style = "float:left;">
+                                  <input type="checkbox" id="heart" checked>
+                                  <label for="heart">&#9829</label>
+                                </div>
                                 <div style="float:right;">
                                   <p>Bought?</p>
                                   <label class="switch">
@@ -430,6 +463,10 @@
                               <p>Personal item</p>
                               <p><span>&#127793</span><span>&#127793</span><span>&#127793</span></p>
                               <p><span>&#128178</span><span>&#128178</span><span>&#128178</span></p>
+                              <div style = "float:left;">
+                                <input type="checkbox" id="heart" checked>
+                                <label for="heart">&#9829</label>
+                              </div>
                               <div style="float:right;">
                                 <p>Bought?</p>
                                 <label class="switch">
@@ -453,6 +490,10 @@
                             <p>Personal item</p>
                             <p><span>&#127793</span><span>&#127793</span><span>&#127793</span></p>
                             <p><span>&#128178</span><span>&#128178</span><span>&#128178</span></p>
+                            <div style = "float:left;">
+                              <input type="checkbox" id="heart" checked>
+                              <label for="heart">&#9829</label>
+                            </div>
                             <div style="float:right;">
                               <p>Bought?</p>
                               <label class="switch">
@@ -464,12 +505,6 @@
                         </div>
                   </div>    
               </div>
-
-              
-
-                      
-                </div>
-                
 
             </div>
               
