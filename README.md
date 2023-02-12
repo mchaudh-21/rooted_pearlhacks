@@ -1,6 +1,6 @@
 # Rooted: How to be Green on a Budget
 
-In order to access our HTML website, click on home_one.html! Our database for sustainable products can be accessed through pearlhacksdata.csv!
+In order to access our HTML website, click on home.html! Our database for sustainable products can be accessed through pearlhacksdata.csv!
 
 ## Inspiration
 With Rooted, we wanted to create a site that provides an incentive to live more sustainably. The problem that comes with this is that many products that are advertised as sustainable alternatives tend to be more expensive, therefore less accessible for those who live on a budget. We want Rooted to provide that accessibility by providing cost-efficient and eco-friendly products everyone can invest in.
