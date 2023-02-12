@@ -2,19 +2,6 @@ body{
     margin: 0;
     padding: 0;
 }
-
-nav {
-    width: 100vw;
-    height: 8vh;
-    display: flex;
-    align-items: center;
-}
-
-.nav-item{
-    margin-left: 6vh;
-    padding: 2vw;
-    font-size: 1vw;
-}
 .container{
     display: flex;
     justify-content: center;
@@ -43,18 +30,10 @@ nav {
     border: 2px solid white;
     border-radius: 50px;
 }
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    cursor: pointer;
-}
 
 h1{
     font: Albert-Sans, sans-serif;
-    font-size: 15vw;
+    font-size: 5vw;
     color: #8E3B46;
 }
 h2{
@@ -65,7 +44,7 @@ h2{
 
 h3{
     font: Albert-Sans, sans-serif;
-    font-size: 3vw;
+    font-size: 5vw;
     color: #718758
 }
 h4{
@@ -75,26 +54,14 @@ h4{
 }
 h5{
     font: Albert-Sans, sans-serif;
-    font-size: 2vw;
+    font-size: 4vw;
     color: #f7e6ca;
 }
 h6{
     font: Albert-Sans, sans-serif;
-    font-size: 1.75vw;
+    font-size: 4vw;
     color: #1f1e1d;
 }
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 60px;
-  }
 
   .column {
     float: left;
@@ -102,3 +69,7 @@ h6{
 }
 h5 {text-align: center;}
 h6 {text-align: center;}
+
+p{
+    font-size: 10pv;
+}

@@ -1,350 +1,479 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Page Title</title>
+        <title>Favorites</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css"/>        
+        <link rel="stylesheet" href="trial.css"/> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <header>
+          <div class="logo">Rooted</div>
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <nav class="nav-bar">
+            <ul>
+              <li>
+                <a href="home.html" >Home</a>
+              </li>
+              <li>
+                <a href="featured.html" >Trending</a>
+              </li>
+              <li>
+                <a href="search.html" >Search</a>
+              </li>
+              <li>
+                <a href="favorites.html" class="active">Favorites</a>
+              </li>
+              <li>
+                <a href="profile.html">Profile</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+    
+        <script>
+          hamburger = document.querySelector(".hamburger");
+          hamburge.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+    
+          }
+        </script>
+        
         <style>
             * {
-  padding: 0;
-  margin: 0;
-  position: relative;
-  box-sizing: border-box;
-}
+                padding: 0;
+                margin: 0;
+                position: relative;
+                box-sizing: border-box;
+            }
 
-.listing-section, .cart-section {
-  width: 100%;
-  float: left;
-  padding: 1%;
-  border-bottom: 0.01em solid #dddbdb;
-}
+            .listing-section, .cart-section {
+            width: 100%;
+            float: left;
+            padding: 1%;
+            border-bottom: 0.01em solid #dddbdb;
+            }
 
-.product {
-  float: left;
-  width: 23%;
-  border-radius: 2%;
-  margin: 1%;
-}
+            .product {
+            float: left;
+            width: 23%;
+            border-radius: 2%;
+            margin: 1%;
+            }
 
-.product:hover {
-  box-shadow: 1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);  
-  -moz-box-shadow:    1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);
-}
+            .product:hover {
+            box-shadow: 1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);
+            -webkit-box-shadow: 1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);  
+            -moz-box-shadow:    1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);
+            }
 
-.image-box {
-  width: 100%;
-  overflow: hidden;
-  border-radius: 2% 2% 0 0;
-}
+            .image-box {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 2% 2% 0 0;
+            }
 
-.images {
-  height: 15em;
-  background-size: cover; 
-  background-position: center center; 
-  background-repeat: no-repeat;
-  border-radius: 2% 2% 0 0;
-  transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
-}
+            .images {
+            height: 15em;
+            background-size: cover; 
+            background-position: center center; 
+            background-repeat: no-repeat;
+            border-radius: 2% 2% 0 0;
+            transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            -webkit-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            }
 
-.images:hover {
-  transform: scale(1.2);
-  overflow: hidden;
-  border-radius: 2%;
-}
+            .images:hover {
+            transform: scale(1.2);
+            overflow: hidden;
+            border-radius: 2%;
+            }
 
-/* IMAGES */
-#image-1 {background-image: url("https://sc01.alicdn.com/kf/UT8.CaXX2NXXXagOFbXC/fresh-navel-oranges.jpg");}
+            /* IMAGES */
+            #image-1 {background-image: url("https://sc01.alicdn.com/kf/UT8.CaXX2NXXXagOFbXC/fresh-navel-oranges.jpg");}
 
-#image-2 {background-image: url("https://newenglandapples.files.wordpress.com/2014/10/img_5595.jpg")}
+            #image-2 {background-image: url("https://newenglandapples.files.wordpress.com/2014/10/img_5595.jpg")}
+            #image-3 {background-image: url("https://cdn.thewirecutter.com/wp-content/media/2020/10/waterbottles-2048px-01162-2x1-1.jpg?auto=webp&quality=75&crop=2:1&width=480&dpr=2")}
+            #image-4 {background-image: url("https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/at%2Farchive%2F3c0f15792dd1f58ae716553f27721d5b342fc953")}
+
+            .text-box {
+            width: 100%;
+            float: left;
+            border: 0.01em solid #dddbdb;
+            border-radius: 0 0 2% 2%;
+            padding: 1em;
+            }
+
+            .description, label, button, input {
+            float: left;
+            clear: left;
+            width: 100%;
+            text-align: center;
+            margin: 0.2em auto;
+            }
+
+            input:focus {
+            outline-color: #fdf;
+            }
+
+            label {
+            width: 60%;
+            }
+
+            .text-box input {
+            width: 15%;
+            clear: none;
+            }
+
+            .text-box button {
+            margin-top: 1em;
+            }
+
+            button {
+            padding: 2%;
+            background-color: #dfd;
+            border: none;
+            border-radius: 2%;
+            }
+
+            button:hover {
+            bottom: 0.1em;
+            }
+
+            button:focus {
+            outline: 0;
+            }
+
+            button:active {
+            bottom: 0;
+            background-color: rgb(96, 119, 70);
+            }
+
+            .table-heading, .table-content {
+            width: 75%;
+            margin: 1% 12.25%;
+            float: left;
+            }
+
+            .table-heading h2 {
+            padding: 1%;
+            margin: 0;
+            text-align: center;
+            }
+
+            .cart-product {
+            width: 50%;
+            float: left;
+            }
+
+            .cart-price {
+            width: 15%;
+            float: left;
+            }
+
+            .cart-quantity {
+            width: 10%;
+            float: left;
+            }
+
+            .cart-total {
+            width: 25%;
+            float: left;
+            }
+
+            .cart-image-box {
+            width: 20%;
+            overflow: hidden;
+            border-radius: 2%;
+            float: left;
+            margin: 1%;
+            }
+
+            .cart-images {
+            height: 7em;
+            background-size: cover; 
+            background-position: center center; 
+            background-repeat: no-repeat;
+            }
+
+            .cart-item {
+            width: 20%;
+            float: left;
+            margin: 3.2em 1%;
+            text-align: center;
+            }
+            .cart-description {
+            width: 53%;
+            float: left;
+            margin: 3.2em 1%;
+            text-align: center;
+            }
+
+            .cart-price h3, .cart-total h3 {
+            margin: 3.2em 5% 3.2em 20%;
+            width: 60%;
+            }
+
+            .cart-quantity input {
+            margin: 3.2em 1%;
+            border: none;
+            }
+
+            .remove {
+            width: 10%;
+            margin: 1px;
+            float: right;
+            clear: right;
+            }
+            .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            }
+
+            .switch input { 
+            opacity: 0;
+            width: 0;
+            height: 0;
+            }
+
+            .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+            }
+
+            .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+            }
+
+            input:checked + .slider {
+            background-color: #546e18;
+            }
+
+            input:focus + .slider {
+            box-shadow: 0 0 1px #546e18;
+            }
+
+            input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+            }
+
+            /* Rounded sliders */
+            .slider.round {
+            border-radius: 34px;
+            }
+
+            .slider.round:before {
+            border-radius: 50%;
+            }
 
 
-
-.text-box {
-  width: 100%;
-  float: left;
-  border: 0.01em solid #dddbdb;
-  border-radius: 0 0 2% 2%;
-  padding: 1em;
-}
-
-.item, .price {
-  clear: left;
-  width: 100%;
-  text-align: center;
-}
-
-.price {
-  color: Grey;
-}
-
-.description, label, button, input {
-  float: left;
-  clear: left;
-  width: 100%;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 1em;
-  text-align: center;
-  margin: 0.2em auto;
-}
-
-input:focus {
-  outline-color: #fdf;
-}
-
-label {
-  width: 60%;
-}
-
-.text-box input {
-  width: 15%;
-  clear: none;
-}
-
-.text-box button {
-  margin-top: 1em;
-}
-
-button {
-  padding: 2%;
-  background-color: #dfd;
-  border: none;
-  border-radius: 2%;
-}
-
-button:hover {
-  bottom: 0.1em;
-}
-
-button:focus {
-  outline: 0;
-}
-
-button:active {
-  bottom: 0;
-  background-color: #fdf;
-}
-
-.table-heading, .table-content {
-  width: 75%;
-  margin: 1% 12.25%;
-  float: left;
-  background-color: #dfd;
-}
-
-.table-heading h2 {
-  padding: 1%;
-  margin: 0;
-  text-align: center;
-}
-
-.cart-product {
-  width: 50%;
-  float: left;
-}
-
-.cart-price {
-  width: 15%;
-  float: left;
-}
-
-.cart-quantity {
-  width: 10%;
-  float: left;
-}
-
-.cart-total {
-  width: 25%;
-  float: left;
-}
-
-.cart-image-box {
-  width: 20%;
-  overflow: hidden;
-  border-radius: 2%;
-  float: left;
-  margin: 1%;
-}
-
-.cart-images {
-  height: 7em;
-  background-size: cover; 
-  background-position: center center; 
-  background-repeat: no-repeat;
-}
-
-.cart-item {
-  width: 20%;
-  float: left;
-  margin: 3.2em 1%;
-  text-align: center;
-}
-.cart-description {
-  width: 53%;
-  float: left;
-  margin: 3.2em 1%;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 1em;
-  text-align: center;
-}
-
-.cart-price h3, .cart-total h3 {
-  margin: 3.2em 5% 3.2em 20%;
-  width: 60%;
-}
-
-.cart-quantity input {
-  margin: 3.2em 1%;
-  border: none;
-}
-
-.remove {
-  width: 10%;
-  margin: 1px;
-  float: right;
-  clear: right;
-}
-
-.coupon button {
-  width: 25%;
-  float: left;
-  clear: right;
-  margin: 12% 5% 12% 0;
-}
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
         </style>
     </head>
-    <body>
-        <center> <h1> Rooted Featured Products </h1> </center>     
+    <body>  
         <form>
             <div class="listing-section">
-                <div class="product">
-                  <div class="image-box">
-                    <div class="images" id="image-1"></div>
-                  </div>
-
-                  <div class="text-box">
-                    <h2 class="item">Orange</h2>
-                    <h3 class="sustainability">leaf</h3>
-                    <p class="price">$$</p>
-                    <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                      </label>
-                      <label class="switch">
-                        <input type="checkbox" checked>
-                        <span class="slider round"></span>
-                      </label>
-                  </div>
-
-                </div>
-
-                <div class="product">
-                  <div class="image-box">
-                    <div class="images" id="image-2"></div>
-                  </div>
-
-                  <div class="text-box">
-                    <h2 class="item">Apple</h2>
-                    <h3 class="sustainability">leaf</h3>
-                    <p class="price">$$</p>
-                    <button type="button" name="item-2-button" id="item-2-button">Add to Cart</button>
-                  </div>
-                </div>
-                </div>
-                </div>
-                </div>
-                </div>
-                </div>
-                </div>
-              </div>
-              
-              <div class="cart-section">
-                
-                <div class="table-heading">
-                  <h2 class="cart-product">Product</h2>
-                  <h2 class="cart-price">Price</h2>
-                  <h2 class="cart-quantity">Quantity</h2>
-                  <h2 class="cart-total">Total</h2>
-                </div>  
-                
-                <div class="table-content">
-                  <div class="cart-product">  
-                    <div class="cart-image-box">
-                      <div class="cart-images" id="image-10"></div>
+                <div class = "row">
+                    
+                    <div class="col rounded" style = "background-color: #739a4e;">
+                        <div class= "card">
+                            <div class="product">
+                                <div class="image-box">
+                                  <div class="images" id="image-1"></div>
+                                </div>
+                                <div class="text-box">
+                                  <h3 style ="font-size: 2vw">Naval Oranges</h3>
+                                  <p>Produce</p>
+                                  <p><span>&#127793</span><span>&#127793</span></p>
+                                  <p><span>&#128178</span></p>
+                                  <div style="float:right;">
+                                    <p>Bought?</p>
+                                    <label class="switch">
+                                      <input type="checkbox">
+                                      <span class="slider round"></span>
+                                    </label>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                        </div>    
                     </div>
-                    <h2 class="cart-item">Lemon</h2>
-                    <p class="cart-description">A bag of lemons</p>
+
+                    <div class="col rounded" style = "background-color: #739a4e;">
+                        <div class= "card">
+                            <div class="product">
+                                <div class="image-box">
+                                  <div class="images" id="image-2"></div>
+                                </div>
+                                <div class="text-box">
+                                  <h3 style ="font-size: 2vw">Honeycrisp Apple</h3>
+                                  <p>Produce</p>
+                                  <p><span>&#127793</span><span>&#127793</span><span>&#127793</span><span>&#127793</span></p>
+                                  <p><span>&#128178</span><span>&#128178</span></p>
+                                  <div style="float:right;">
+                                    <p>Bought?</p>
+                                    <label class="switch">
+                                      <input type="checkbox">
+                                      <span class="slider round"></span>
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>    
+                    </div>
+
+
+                    <div class="col rounded" style = "background-color: #739a4e;">
+                        <div class= "card">
+                            <div class="product">
+                                <div class="image-box">
+                                  <div class="images" id="image-3"></div>
+                                </div>
+                                <div class="text-box">
+                                  <h3 style ="font-size: 2vw">Metal Water Bottles</h3>
+                                  <p>Personal item</p>
+                                  <p><span>&#127793</span><span>&#127793</span><span>&#127793</span></p>
+                                  <p><span>&#128178</span><span>&#128178</span><span>&#128178</span></p>
+                                  <div style="float:right;">
+                                    <p>Bought?</p>
+                                    <label class="switch">
+                                      <input type="checkbox">
+                                      <span class="slider round"></span>
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>    
+                    </div>
+
+                    <div class="col rounded" style = "background-color: #739a4e;">
+                        <div class= "card">
+                            <div class="product">
+                                <div class="image-box">
+                                  <div class="images" id="image-4"></div>
+                                </div>
+                                <div class="text-box">
+                                  <h3 style ="font-size: 2vw">Silicon ZipLock Bags</h3>
+                                  <p>Kitchen</p>
+                                  <p><span>&#127793</span><span>&#127793</span></p>
+                                  <p><span>&#128178</span><span>&#128178</span><span>&#128178</span></p>
+                                  <div style="float:right;">
+                                    <p>Bought?</p>
+                                    <label class="switch">
+                                      <input type="checkbox">
+                                      <span class="slider round"></span>
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>    
+                    </div>
+
+                    <div class="col rounded" style = "background-color: #739a4e;">
+                      <div class= "card">
+                          <div class="product">
+                              <div class="image-box">
+                                <div class="images" id="image-3"></div>
+                              </div>
+                              <div class="text-box">
+                                <h3 style ="font-size: 2vw">Metal Water Bottles</h3>
+                                <p>Personal item</p>
+                                <p><span>&#127793</span><span>&#127793</span><span>&#127793</span></p>
+                                <p><span>&#128178</span><span>&#128178</span><span>&#128178</span></p>
+                                <div style="float:right;">
+                                  <p>Bought?</p>
+                                  <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                      </div>    
                   </div>
+
+                  <div class="col rounded" style = "background-color: #739a4e;">
+                    <div class= "card">
+                        <div class="product">
+                            <div class="image-box">
+                              <div class="images" id="image-3"></div>
+                            </div>
+                            <div class="text-box">
+                              <h3 style ="font-size: 2vw">Metal Water Bottles</h3>
+                              <p>Personal item</p>
+                              <p><span>&#127793</span><span>&#127793</span><span>&#127793</span></p>
+                              <p><span>&#128178</span><span>&#128178</span><span>&#128178</span></p>
+                              <div style="float:right;">
+                                <p>Bought?</p>
+                                <label class="switch">
+                                  <input type="checkbox">
+                                  <span class="slider round"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                    </div>    
                 </div>
-              </div>   
+
+                <div class="col rounded" style = "background-color: #739a4e;">
+                  <div class= "card">
+                      <div class="product">
+                          <div class="image-box">
+                            <div class="images" id="image-3"></div>
+                          </div>
+                          <div class="text-box">
+                            <h3 style ="font-size: 2vw">Metal Water Bottles</h3>
+                            <p>Personal item</p>
+                            <p><span>&#127793</span><span>&#127793</span><span>&#127793</span></p>
+                            <p><span>&#128178</span><span>&#128178</span><span>&#128178</span></p>
+                            <div style="float:right;">
+                              <p>Bought?</p>
+                              <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                  </div>    
+              </div>
+
+              
+
+                      
+                </div>
+                
+
+            </div>
+              
+           
         </form>     
     </body>
 </html>
-
-
-
-`   
