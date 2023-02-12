@@ -1,0 +1,30 @@
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img{
+    padding: 50x 0;
+    width: 4px;
+    width: auto;
+}
+
+.btn{
+    display: inline-block;
+    background: #053016;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+}
+
+.body{
+    background: radial-gradient(white,#053016);
+}
