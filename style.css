@@ -33,7 +33,7 @@ body{
 
 h1{
     font: Albert-Sans, sans-serif;
-    font-size: 15vw;
+    font-size: 5vw;
     color: #8E3B46;
 }
 h2{
@@ -44,7 +44,7 @@ h2{
 
 h3{
     font: Albert-Sans, sans-serif;
-    font-size: 3vw;
+    font-size: 5vw;
     color: #718758
 }
 h4{
@@ -54,12 +54,12 @@ h4{
 }
 h5{
     font: Albert-Sans, sans-serif;
-    font-size: 2vw;
+    font-size: 4vw;
     color: #f7e6ca;
 }
 h6{
     font: Albert-Sans, sans-serif;
-    font-size: 1.75vw;
+    font-size: 4vw;
     color: #1f1e1d;
 }
 
@@ -69,3 +69,7 @@ h6{
 }
 h5 {text-align: center;}
 h6 {text-align: center;}
+
+p{
+    font-size: 10pv;
+}
