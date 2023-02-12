@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css"/>        
         <link rel="stylesheet" href="trial.css"/> 
+        <link rel="stylesheet" href="search.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <header>
@@ -19,9 +20,6 @@
             <ul>
               <li>
                 <a href="home.html" >Home</a>
-              </li>
-              <li>
-                <a href="featured.html" >Trending</a>
               </li>
               <li>
                 <a href="search.html" class="active">Search</a>
@@ -169,26 +167,7 @@
             margin: 0;
             text-align: center;
             }
-
-            .cart-product {
-            width: 50%;
-            float: left;
-            }
-
-            .cart-price {
-            width: 15%;
-            float: left;
-            }
-
-            .cart-quantity {
-            width: 10%;
-            float: left;
-            }
-
-            .cart-total {
-            width: 25%;
-            float: left;
-            }
+            
 
             .cart-image-box {
             width: 20%;
@@ -339,20 +318,29 @@
             label {
               font-size: 4em;
             }
-            .checked {
-              color: orange;
-            }
+
         </style>
     </head>
+
     <body>
         <div class = "row row-2">
-            <h2>All Products</h2>
+            <h2><center>All Products</center></h2>
             <select>
                 <option>Default Sorting</option>
                 <option>Sort by Price</option>
                 <option>Sort by Category</option>
                 <option>Sort by Sustainability Score</option>
             </select>
+            <form role="search" id="form">
+              <div class = "search" style: "float:right">
+                  <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+                  <button>
+                      <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+                  </button>
+              </div>
+            </form>
+        </div>
+            
     </body>
     <body>  
         <form>
