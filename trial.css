@@ -96,3 +96,10 @@ header{
         color: red;
     }
 }
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #053016;
+    color: white;
+  }
