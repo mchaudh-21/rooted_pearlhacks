@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTD-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=devide-width, intial-scale=1.0">
+    <title>main homepage</title>
+    <link rel="stylesheet" href="trial.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">Rooted</div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <a href="home.html" >Home</a>
+          </li>
+          <li>
+            <a href="featured.html" >Trending</a>
+          </li>
+          <li>
+            <a href="search.html" class="active">Search</a>
+          </li>
+          <li>
+            <a href="favorites.html" >Favorites</a>
+          </li>
+          <li>
+            <a href="profile.html">Profile</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
+    <script>
+      hamburger = document.querySelector(".hamburger");
+      hamburge.onclick = function() {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+
+      }
+    </script>
+
+  </body>
+</html>

@@ -53,19 +53,42 @@
 
 
 <body>
-   <header>
-       <div class="site-content">
-           <nav>
-               <a class="brand"></a>
-               <a class="nav-item">Home</a>
-               <a class="nav-item">Trending</a>
-               <a class="nav-item">Product Search</a>
-               <a class="nav-item">Favorites</a>
-               <a class="nav-item">Profile</a>
-           </nav>
-       </div class="container">
-       
-   </header>
+  <header>
+    <div class="logo">Rooted</div>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li>
+          <a href="home.html" class="active">Home</a>
+        </li>
+        <li>
+          <a href="featured.html" >Trending</a>
+        </li>
+        <li>
+          <a href="search.html" >Search</a>
+        </li>
+        <li>
+          <a href="favorites.html" >Favorites</a>
+        </li>
+        <li>
+          <a href="profile.html">Profile</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <script>
+    hamburger = document.querySelector(".hamburger");
+    hamburge.onclick = function() {
+      navBar = document.querySelector(".nav-bar");
+      navBar.classList.toggle("active");
+
+    }
+  </script>
    <div class="profile-container">
     <div class="profile-image">
       <img src="profile.jpg" alt="Profile Picture">
