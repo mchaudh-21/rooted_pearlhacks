@@ -26,6 +26,31 @@ nav {
     text-align: center;
 }
 
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a{
+    list-style: none;
+    margin-left: 50px;
+}
+
+.logo img{
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
 
 h1{
     font: Albert-Sans, sans-serif;
