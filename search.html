@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css"/>        
         <link rel="stylesheet" href="trial.css"/> 
+        <link rel="stylesheet" href="search.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <header>
@@ -24,10 +25,10 @@
                 <a href="featured.html" >Trending</a>
               </li>
               <li>
-                <a href="search.html" >Search</a>
+                <a href="search.html" class="active">Search</a>
               </li>
               <li>
-                <a href="favorites.html" class="active">Favorites</a>
+                <a href="favorites.html" >Favorites</a>
               </li>
               <li>
                 <a href="profile.html">Profile</a>
@@ -169,26 +170,7 @@
             margin: 0;
             text-align: center;
             }
-
-            .cart-product {
-            width: 50%;
-            float: left;
-            }
-
-            .cart-price {
-            width: 15%;
-            float: left;
-            }
-
-            .cart-quantity {
-            width: 10%;
-            float: left;
-            }
-
-            .cart-total {
-            width: 25%;
-            float: left;
-            }
+            
 
             .cart-image-box {
             width: 20%;
@@ -342,56 +324,72 @@
 
         </style>
     </head>
+
     <body>
         <div class = "row row-2">
-            <h2>All Products</h2>
+            <h2><center>All Products</center></h2>
             <select>
                 <option>Default Sorting</option>
-                <option>Sort by price</option>
+                <option>Sort by Price</option>
                 <option>Sort by Category</option>
-                <option>Sustainability Score</option>
+                <option>Sort by Sustainability Score</option>
             </select>
+            <form role="search" id="form">
+              <div class = "search" style: "float:right">
+                  <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+                  <button>
+                      <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+                  </button>
+              </div>
+            </form>
+        </div>
+            
     </body>
     <body>  
         <form>
             <div class="listing-section">
-
                     <div class="col rounded" style = "background-color: #739a4e;">
                         <div class= "card">
                             <div class="product">
                                 <div class="image-box">
-                                  <div class="images" id="image-1"></div>
+                                  <div class="images" id="image-3"></div>
                                 </div>
                                 <div class="text-box">
-                                  <h3 style ="font-size: 2vw">Naval Oranges</h3>
-                                  <p>Produce</p>
-                                  <p><span>&#127793</span><span>&#127793</span></p>
-                                  <p><span>&#128178</span></p>
-                                  
-                                </div>
-                              </div>
-                        </div>    
-                    </div>
-
-                    <div class="col rounded" style = "background-color: #739a4e;">
-                        <div class= "card">
-                            <div class="product">
-                                <div class="image-box">
-                                  <div class="images" id="image-2"></div>
-                                </div>
-                                <div class="text-box">
-                                  <h3 style ="font-size: 2vw">Honeycrisp Apple</h3>
-                                  <p>Produce</p>
-                                  <p><span>&#127793</span><span>&#127793</span><span>&#127793</span><span>&#127793</span></p>
-                                  <p><span>&#128178</span><span>&#128178</span></p>
+                                  <h3 style ="font-size: 2vw">Metal Water Bottles</h3>
+                                  <p>Personal item</p>
+                                  <p><span>&#127793</span><span>&#127793</span><span>&#127793</span></p>
+                                  <p><span>&#128178</span><span>&#128178</span><span>&#128178</span></p>
+                                  <p><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#9734;</span><span>&#9734;</span></p>
                                   <div style = "float:left;">
-                                    <input type="checkbox" id="heart" checked>
+                                    <input type="checkbox" id="heart" >
                                     <label for="heart">&#9829</label>
                                   </div>
                                 </div>
                               </div>
                         </div>    
                     </div>
+
+            
+                    <div class="col rounded" style = "background-color: #739a4e;">
+                      <div class= "card">
+                          <div class="product">
+                              <div class="image-box">
+                                <div class="images" id="image-4"></div>
+                              </div>
+                              <div class="text-box">
+                                <h3 style ="font-size: 2vw">Silicon ZipLock Bags</h3>
+                                <p>Kitchen</p>
+                                <p><span>&#127793</span><span>&#127793</span></p>
+                                <p><span>&#128178</span><span>&#128178</span><span>&#128178</span></p>
+                                <p><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#9734;</span></p>
+                                <div style = "float:left;">
+                                  <input type="checkbox" id="heart" checked>
+                                  <label for="heart">&#9829</label>
+                                </div>
+                              </div>
+                            </div>
+                      </div>    
+                  </div>
 
 
                     <div class="col rounded" style = "background-color: #739a4e;">
@@ -405,6 +403,7 @@
                                   <p>Personal item</p>
                                   <p><span>&#127793</span><span>&#127793</span><span>&#127793</span></p>
                                   <p><span>&#128178</span><span>&#128178</span><span>&#128178</span></p>
+                                  <p><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#9734;</span><span>&#9734;</span></p>
                                   <div style = "float:left;">
                                     <input type="checkbox" id="heart" >
                                     <label for="heart">&#9829</label>
@@ -425,6 +424,7 @@
                                   <p>Kitchen</p>
                                   <p><span>&#127793</span><span>&#127793</span></p>
                                   <p><span>&#128178</span><span>&#128178</span><span>&#128178</span></p>
+                                  <p><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#9734;</span></p>
                                   <div style = "float:left;">
                                     <input type="checkbox" id="heart" checked>
                                     <label for="heart">&#9829</label>
@@ -445,6 +445,7 @@
                                 <p>Personal item</p>
                                 <p><span>&#127793</span><span>&#127793</span><span>&#127793</span></p>
                                 <p><span>&#128178</span><span>&#128178</span><span>&#128178</span></p>
+                                <p><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#9734;</span></p>
                                 <div style = "float:left;">
                                   <input type="checkbox" id="heart" >
                                   <label for="heart">&#9829</label>
@@ -465,6 +466,8 @@
                               <p>Personal item</p>
                               <p><span>&#127793</span><span>&#127793</span><span>&#127793</span></p>
                               <p><span>&#128178</span><span>&#128178</span><span>&#128178</span></p>
+                              <p><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#9734;</span><span>&#9734;</span></p>
+
                               <div style = "float:left;">
                                 <input type="checkbox" id="heart" >
                                 <label for="heart">&#9829</label>
@@ -485,6 +488,8 @@
                             <p>Personal item</p>
                             <p><span>&#127793</span><span>&#127793</span><span>&#127793</span></p>
                             <p><span>&#128178</span><span>&#128178</span><span>&#128178</span></p>
+                            <p><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#9734;</span><span>&#9734;</span></p>
+
                             <div style = "float:left;">
                               <input type="checkbox" id="heart" checked>
                               <label for="heart">&#9829</label>
@@ -504,6 +509,8 @@
                               <p>Personal item</p>
                               <p><span>&#127793</span><span>&#127793</span><span>&#127793</span></p>
                               <p><span>&#128178</span><span>&#128178</span><span>&#128178</span></p>
+                              <p><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#9734;</span></p>
+
                               <div style = "float:left;">
                                 <input type="checkbox" id="heart" >
                                 <label for="heart">&#9829</label>
@@ -519,7 +526,7 @@
             <span>1</span>
             <span>2</span>
             <span>3</span>
-            <span>&#85;</span>
+            <span>&#8594;</span>
         </div>
            
         </form>   
